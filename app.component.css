@@ -1,0 +1,153 @@
+.layoutHead
+{
+    display: grid;
+    background: black;
+    color: orange;
+    grid-template-columns:1fr 1fr 1fr;
+    border-bottom-style: inset;
+    border-bottom-color: #FC4F00;
+}
+.foot1
+{
+    background:orange;
+}
+.foot2
+{
+    background:orange;
+    margin: 20%;
+
+}
+.sicons
+{   
+    width: 20%;
+    height: 20%;
+    position: relative;
+    float: left;
+}
+.footer
+{
+    border: #FC4F00;
+    border-style: inset;
+}
+.row3
+{
+    display: grid;
+    background: black;
+    color: orange;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.title
+{
+    color:red;
+    font-weight: bold;
+}
+body, html {
+    height: 100%;
+}
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+ 
+  
+
+  /* tiles*/
+  p.navtext {
+    font-family:Tahoma;
+    color: white;
+    font-size: 1.5rem;
+  }
+  img {
+    padding: 5px;
+  }
+  .company {
+    background-color: #16225f;
+    height: 500px;
+  }
+  .capabilities {
+    background-color: #80BD00;
+  }
+  .branding {
+    background-color: #00A1E1;
+  }
+  .creativelounge {
+    background-color: #FC4F00;
+  }
+  .customercare {
+    background-color: #932749;
+  }
+  .panel-heading {
+    background: #000;
+  }
+  .centered-form{
+      margin-top: 60px;
+  }
+  
+  .centered-form .panel{
+      background: #e9e9e9;
+  }
+  
+  /*Circle*/
+  .navlinks div {
+      position: relative;
+      height: 550px;
+      margin: 2%;
+
+  }
+  .navlinks div::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      background: rgba(255,255,255,.2);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+  }
+  .navlinks div:hover::before {
+      -webkit-animation: circle .75s;
+      animation: circle .75s;
+  }
+  @-webkit-keyframes circle {
+      0% {
+          opacity: 1;
+      }
+      40% {
+          opacity: 1;
+      }
+      100% {
+          width: 120%;
+          height: 120%;
+          opacity: 0;
+      }
+  }
+  @keyframes circle {
+      0% {
+          opacity: 1;
+      }
+      40% {
+          opacity: 1;
+      }
+      100% {
+          width: 120%;
+          height: 120%;
+          opacity: 0;
+      }
+  }
+  
+  
