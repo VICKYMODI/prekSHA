@@ -1,0 +1,20 @@
+
+  <div class="join">
+   
+  </div>
+  <div *ngFor = "let grapher of graphers">
+    <div class="row">
+      <div class="col-md-3" (click)="GrapherClicked(grapher)">
+          <img src="../assets/img/pa4.jpg" class="rounded-circle" alt="Cinque Terre">
+          
+      </div>
+      <div class="col-md-6" style="color: bisque; margin-top: 2.5%;">
+          <h3 >{{grapher.GrapherName}}</h3> 
+          <fa name = "edit" (click) = "bookPhotographer(grapher)"></fa> Book Photographer
+      </div>
+        
+    </div>
+    
+  </div>
+
+<router-outlet></router-outlet>
