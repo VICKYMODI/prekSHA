@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+      <div class="book" style="color: azure;">
+          <h2 style="color: azure;">
+            Create an Account : Photographer
+          </h2>
+          
+            <form [formGroup] = "addphotographerform" (ngSubmit)="addphotographersave()">
+              <div class="form-group">
+                <label for="formGroupExampleInput">Name</label>
+                <input type="text" class="form-control" id="Name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Special_IN</label>
+                <input type="text" class="form-control" id="Special_IN" placeholder="Special_IN">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">DOB</label>
+                <input type="date" class="form-control" id="DOB" placeholder="ShootLocation">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Your Address</label>
+                <input type="date" class="form-control" id="Address" placeholder="Address">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Profile Picture</label>
+                <input type="file" id="ProfilePicture">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Upload some of your best work</label>
+                <input type="file" id="upload1">
+              </div>
+              <div class="form-group">
+                  <label for="formGroupExampleInput2">Upload some of your best work</label>
+                  <input type="file" id="upload2">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Upload some of your best work</label>
+                    <input type="file" id="upload3">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Upload some of your best work</label>
+                    <input type="file" id="upload4">
+                </div>
+                <div class="btn">
+                    <span>Register</span>
+                </div>
+            </form>
+          </div>
+  </div>
+  
+</div>
