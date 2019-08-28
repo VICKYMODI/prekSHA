@@ -1,0 +1,15 @@
+
+<div class="layout">
+  <app-photographer [graphers]='graphers' (selectGrapher) = "selectGrapher($event)" (bookedGrapher)="bookGrapher($event)" (addGrapher) = "addedGrapher()">
+
+  </app-photographer>
+  <div>
+    <app-photographer-details [grapher]="this.selectedGrapher" (updategrapher)="selectGrapher($event)"></app-photographer-details>
+    <app-booking *ngIf="bookedGrapher" [grapher]="this.bookedGrapher"></app-booking>
+    <app-add-photographer *ngIf="addGrapher" [grapher]="this.bookedGrapher"></app-add-photographer>
+  </div>
+  
+</div>
+
+
+
