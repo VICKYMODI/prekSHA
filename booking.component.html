@@ -1,0 +1,46 @@
+<div class="book">
+<h2>
+  Photographer : {{ grapher.GrapherName }}
+</h2>
+
+  <form [formGroup] = "bookingform" (ngSubmit)="bookSave()"> 
+    <div class="form-group">
+      <label for="formGroupExampleInput">User</label>
+      <input type="email" class="form-control" formControlName="user" placeholder="Name">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Shoot Purpose</label>
+      <select id="shootPurpose">
+        <option value="">--SelectPurpose--</option>
+        <option value="">ModelShoot</option>
+        <option value="">Wedding</option>
+        <option value="">Events</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">ShootLocation</label>
+      <input type="text" class="form-control" formControlName="Loc_of_shoot" placeholder="ShootLocation">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">DateOfShoot</label>
+      <input type="date" class="form-control" formControlName="DateOfShoot" placeholder="DateOfShoot">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Address</label>
+      <textarea type="text" class="form-control" formControlName="Address" placeholder="Address"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">PhotographerChoosen</label>
+      <input type="text" class="form-control" formControlName="PickGrapher" placeholder="SetLocation" value="{{grapher.GrapherName}}" disabled>
+    </div>
+    <button class="btn" type="submit" style="margin-right: 2%;">
+        <span>Book</span>
+    </button>
+    <button class="btn" type="reset">
+        <span>Reset</span>
+    </button>
+    
+    
+    <!-- <button type = "submit">Confirm</button> -->
+  </form>
+</div>
