@@ -1,0 +1,39 @@
+<div class="join">
+                <div class="button button-2"><a routerLink="addPhotographer" style="color:aliceblue;">Are you a Photographer!</a></div>
+      </div>
+    <div class="row" *ngIf="grapher" style="color:aliceblue;">
+        <div class="col-md-4">
+                Photographer:<h1>{{grapher.GrapherName}}</h1>
+                Age:<h1>{{grapher.Age}}</h1>
+                Rating:
+                <fa name="star" [ngClass]="{red:grapher.avg_rating>0}" ></fa>
+                <fa name="star" [ngClass]="{red:grapher.avg_rating>1}" ></fa>
+                <fa name="star" [ngClass]="{red:grapher.avg_rating>2}" ></fa>
+                <fa name="star" [ngClass]="{red:grapher.avg_rating>3}" ></fa>
+                <fa name="star" [ngClass]="{red:grapher.avg_rating>4}" ></fa>
+                ({{grapher.no_of_rating}})<br>
+                LocatedIn:
+                <h1>{{grapher.Location}}</h1>
+                BestIn:<h1>{{grapher.Special_IN}}</h1>
+                <div id="rate-container">
+                        <h1>Rate Him</h1>
+                            <fa *ngFor="let rate of [1,2,3,4,5]" name="star" (mouseenter) = "rateHover(rate)" 
+                            [ngClass] = "{purple:hovervalue >= rate}" (mouseleave)="hovervalue=0" (click)="rateClicked(rate)"></fa><br>
+                            
+                </div>
+                
+        </div>
+        <div>
+                <h1>His Works</h1>  
+        </div>
+        
+        
+    
+    
+    
+    
+    <br><br>
+
+
+
+
